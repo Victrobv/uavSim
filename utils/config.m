@@ -1,4 +1,4 @@
-% Config.m file for Simulink Aerosonde model
+% Startup file for Simulink Aerosonde model
 
 clearvars;
 
@@ -64,9 +64,9 @@ C_Dp = 0;
 
 %%% Initial Conditions %%%
 
-x_0     = [0 0 0];    %[m]
+x_0     = [0 0 -200];    %[m]
 theta_0 = [0 0 0];    %[rad] - [roll pitch yaw]
-v_0     = [12 3 2];    %[m/s]
+v_0     = [25 0 0];    %[m/s]
 w_0     = [0 0 0];    %[rad/s] - [p q r]
 
 %%% Run Model %%%
