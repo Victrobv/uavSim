@@ -48,7 +48,6 @@ C_n = [0, 0.073, -0.069, -0.095, -0.011, -0.069];
 
 % legend: [0, beta, p, r, detla_a, delta_r]
 
-
 % Long Coefs
 
 C_L = [0.23, 5.61, 7.95, 0.13];
@@ -68,15 +67,3 @@ x_0     = [0 0 -200];    %[m]
 theta_0 = [0 0 0];    %[rad] - [roll pitch yaw]
 v_0     = [25 0 0];    %[m/s]
 w_0     = [0 0 0];    %[rad/s] - [p q r]
-
-%%% Run Model %%%
-
-open('uav_control.slx')
-%sim('uav_control.slx')
-% output_signal = yout.getElement('signal_name');
-% time = output_signal.Values.Time;
-% signal = output_signal.Values.Data(row, column);
-
-
-% To Workspace - out data
-% From Workspace - input data from named variable
