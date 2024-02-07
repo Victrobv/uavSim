@@ -4,10 +4,10 @@ clearvars;
 
 %%% Initial Conditions %%%
 
-x_0     = [0, 0, -200];    %[m] - [pn pe pd]
-theta_0 = [0, 0, 0];       %[rad] - [roll pitch yaw]
-v_0     = [25, 0, 0];      %[m/s] - [u v w]
-w_0     = [0, 0, 0];       %[rad/s] - [p q r]
+x0     = [0, 0, -200];    %[m] - [pn pe pd]
+theta0 = [0, 0, 0];       %[rad] - [roll pitch yaw]
+v0     = [25, 0, 0];      %[m/s] - [u v w]
+w0     = [0, 0, 0];       %[rad/s] - [p q r]
 
 %%% Airframe Parameters %%%
 
@@ -19,6 +19,11 @@ Jx   = 0.824;            % [kg-m^2]
 Jy   = 1.135;            % [kg-m^2]
 Jz   = 1.759;            % [kg-m^2]
 Jxz  = 0.120;            % [kg-m^2]
+
+I = [Jx,  0, -Jxz;
+      0,  Jy,  0;
+    -Jxz, 0,  Jz];
+
 S_wing        = 0.55;    % [m^2]
 b             = 2.90;    % [m]
 c             = 0.19;    % [m]
